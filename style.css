@@ -78,3 +78,50 @@ img {
     text-align: right;
     padding: 3em 3em;
 }
+/* Navigation Bar */
+.navbar {
+    background-color: #286372c0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+    color: #d6e7fb;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #1b454fc0;
+}
+
+.topic-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* allows z-index to work */
+}
+
+.topic-card:hover {
+    transform: translateY(-12px) scale(1.07);
+    box-shadow: 18px 18px 25px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+    color: #132f37c0;
+}
